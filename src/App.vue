@@ -22,6 +22,7 @@ function up() {
     if (fhcode) {
       map.clearMap()
       const url = 'https://www.hndyjqrh.cn/api/multialarm/pic/download?creator=geo&file=' + fhcode + '.geojson'
+      showLoading.value = true
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
@@ -137,6 +138,7 @@ const renderPolygon = (i) => {
       }
       map.clearMap()
       const url = 'https://www.hndyjqrh.cn/api/multialarm/pic/download?creator=geo&file=' + code + '.geojson'
+      showLoading.value = true
       fetch(url)
         .then((response) => response.json())
         .then((data) => {

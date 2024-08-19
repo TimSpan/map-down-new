@@ -12,6 +12,7 @@
     "vue": "^3.4.35"
   },
   "devDependencies": {
+    "@kjgl77/datav-vue3": "^1.7.3",
     "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vue/cli-plugin-typescript": "^5.0.8",
